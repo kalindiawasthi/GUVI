@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      div.label_below {
+        position: relative;
+        display: inline-block;
+        height: 3em;
+      }
+      div.label_below label {
+        position: absolute;
+        top: 1.4em;
+        left: 0em;
+      }
+      input {
+        border: none;
+        border-bottom: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="border: 2px solid black; width: 33em; padding: 1em">
+      <h2
+        style="
+          background-color: red;
+          color: white;
+          margin-top: 0;
+          text-align: center;
+        "
+      >
+        Yes! I want to subscribe to <i>Mag-O-Zine</i>
+      </h2>
+      <div class="label_below" style="width: 16em">
+        <input
+          type="text"
+          name="fname"
+          id="fname"
+          style="width: 16em"
+          value="Enter your first name"
+        />
+        <label for="fname">First Name</label>
+      </div>
+      <div class="label_below" style="width: 16em">
+        <input
+          type="text"
+          name="lname"
+          id="lname"
+          style="width: 16em"
+          value="Enter your Last name"
+        />
+        <label for="lname">Last Name</label>
+      </div>
+      <br />
+      <div class="label_below" style="width: 35em">
+        <input
+          type="text"
+          name="addr"
+          id="addr"
+          style="width: 35em"
+          value="Enter your address"
+        />
+        <label for="addr">Address</label>
+      </div>
+      <br />
+      <div class="label_below" style="width: 10em">
+        <input
+          type="text"
+          name="city"
+          id="city"
+          style="width: 8em"
+          value="Enter your city"
+        />
+        <label for="city">City</label>
+      </div>
+      <div class="label_below" style="width: 10em">
+        <input
+          type="text"
+          name="State"
+          id="State"
+          style="width: 5em"
+          value="enter your state"
+        />
+        <label for="State">State</label>
+      </div>
+      <div class="label_below" style="width: 10em">
+        <input type="text" name="zip" id="zip" value="enter your zip code" />
+        <label for="zip">Zip</label>
+      </div>
+      <br />
+      <b>
+        <span>Gender:</span><br />
+        <input type="radio" id="male" name="gender" />
+        <label for="male">Male</label><br />
+        <input type="radio" id="female" name="gender" />
+        <label for="female">Female</label><br />
+        <input type="radio" id="other" name="gender" checked="checked" />
+        <label for="other">Other</label><br /><br />
+        <label for="subscription">Subscribe for:</label>
+        <select name="subscription" id="subscription">
+          <option value="1 year($19.95)">1 year($19.95)</option>
+          <option value="2 years($35.00)" selected="selected">
+            2 years($35.00)
+          </option></select
+        ><br />
+        <span>Send me more information about:</span><br />
+        <input type="checkbox" name="comp" id="comp" />
+        <label for="comp">Computer-Zine</label><br />
+        <input type="checkbox" name="fish" id="fish" checked />
+        <label for="fish">Fishing-Zine</label><br />
+        <input type="checkbox" name="cat" id="cat" />
+        <label for="cat">Cat-O-Zine</label><br />
+      </b>
+    </div>
+  </body>
+</html>

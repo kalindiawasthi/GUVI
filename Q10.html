@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Personal Info</title>
+  </head>
+  <style>
+    div.outerdiv {
+      position: relative;
+      border: 2px solid black;
+      margin-right: auto;
+      margin-left: auto;
+      background-color: ivory;
+      width: 26em;
+      height: 30em;
+    }
+    div.inputdiv {
+      position: absolute;
+      left: 8em;
+    }
+    div.label {
+      position: absolute;
+      left: 1em;
+    }
+    textarea {
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      background-color: #f8f8f8;
+      resize: none;
+    }
+  </style>
+  <body>
+    <div class="outerdiv">
+      <h2 style="text-align: center">Personal Info</h2>
+      <b>
+        <form>
+          <div class="label">
+            <label for="fullname"> Fullname: </label><br /><br />
+            <label for="email">Email: </label><br /><br />
+            <label for="mobile">Mobile: </label><br /><br />
+            <span>Gender: </span><br /><br />
+            <span>Category:</span><br /><br />
+            <label for="country">Country: </label><br /><br />
+            <label for="comment"> Comments</label><br /><br />
+          </div>
+          <div class="inputdiv">
+            <input
+              type="text"
+              name="fullname"
+              value="Enter your name here..."
+              size="20"
+              style="
+                background-color: #f8f8f8;
+                border: none;
+                border-bottom: 1em black;
+              "
+            /><br /><br />
+
+            <input
+              type="email"
+              name="email"
+              value="Enter your email here..."
+              size="20"
+              style="
+                background-color: #f8f8f8;
+                border: none;
+                border-bottom: 1em black;
+              "
+            /><br /><br />
+
+            <input
+              type="tel"
+              name="mobile"
+              value="Enter your mobile here..."
+              size="20"
+              style="
+                background-color: #f8f8f8;
+                border: none;
+                border-bottom: 1em black;
+              "
+            /><br /><br />
+
+            <div>
+              <input type="radio" name="male" id="male" />
+              <label for="male"> Male </label>
+
+              <input type="radio" name="female" id="female" />
+              <label for="female"> Female </label>
+
+              <input type="radio" name="other" id="other" checked="checked" />
+              <label for="other"> Other </label><br /><br />
+            </div>
+
+            <label for="category">student: </label>
+            <input type="checkbox" name="category" value="student" />
+            <label for="category">working professional: </label>
+            <input
+              type="checkbox"
+              name="category"
+              value="working professional"
+            /><br /><br />
+
+            <select
+              name="country"
+              id="country"
+              style="width: 13em; background-color: #f8f8f8"
+            >
+              <option value="india">India</option>
+              <option value="us">US</option>
+              <option value="other">Not in above List</option></select
+            ><br /><br />
+
+            <textarea name="comment" id="comment" cols="26" rows="5">
+Comments</textarea
+            ><br /><br />
+            <input type="submit" value="submit" />
+          </div>
+        </form>
+      </b>
+    </div>
+  </body>
+</html>
